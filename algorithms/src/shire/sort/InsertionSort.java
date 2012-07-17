@@ -23,13 +23,13 @@ public class InsertionSort<T extends Comparable<? super T>> implements ISort<T> 
 		for (int i = 1; i < A.size(); i++) {
 			T key = A.get(i);
 			int j;
-			for (j = i - 1; j >= 0; j--) {
-				if (A.get(j).compareTo(key) > 0) {
+
+			for (j = i - 1; j >= 0; j--)
+				if (A.get(j).compareTo(key) > 0)
 					A.set(j + 1, A.get(j));
-				} else {
+				else
 					break;
-				}
-			}
+
 			A.set(j + 1, key);
 		}
 		return A;
