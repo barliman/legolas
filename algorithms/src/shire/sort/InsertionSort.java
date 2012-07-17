@@ -19,7 +19,7 @@ import java.util.List;
 public class InsertionSort<T extends Comparable<? super T>> implements ISort<T> {
 
 	@Override
-	public List<T> sort(List<T> A) {
+	public List<T> sort(final List<T> A) {
 		for (int i = 1; i < A.size(); i++) {
 			T key = A.get(i);
 			int j;
