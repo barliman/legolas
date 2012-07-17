@@ -13,10 +13,11 @@
  * this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package shire.sort;
+
 import java.util.List;
 
 public interface ISort<T extends Comparable<? super T>> {
 
 	public List<T> sort(List<T> A);
-	
+
 }
